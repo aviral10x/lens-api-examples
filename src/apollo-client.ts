@@ -21,7 +21,9 @@ const authLink = new ApolloLink((operation, forward) => {
   // Use the setContext method to set the HTTP headers.
   operation.setContext({
     headers: {
-      'x-access-token': token ? `Bearer ${token}` : '',
+      'x-access-token': token
+        ? 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjB4MGM3NThGMzI2RDY3MDBkQjM3QjVkNzUxNWFlNzM0QzViNENCODY2OCIsInJvbGUiOiJub3JtYWwiLCJpYXQiOjE2NDc4ODU3MDMsImV4cCI6MTY0Nzg4NzUwM30.4IwNUYiSWddhMU36Zw_VS0XzM5PcaXWghU4vHbfGsFM'
+        : '',
     },
   });
 

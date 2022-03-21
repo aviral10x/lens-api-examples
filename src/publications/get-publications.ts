@@ -307,7 +307,7 @@ const getPublicationsRequest = (getPublicationQuery: any) => {
 
 export const getPublications = async () => {
   const result = await getPublicationsRequest({
-    profileId: '0x032f1a',
+    profileId: '0x3b',
     publicationTypes: ['POST', 'COMMENT', 'MIRROR'],
   });
   prettyJSON('publications: result', result.data);
